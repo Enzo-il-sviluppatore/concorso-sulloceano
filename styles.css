@@ -403,7 +403,7 @@ blockquote cite {
 .action-cell:hover { background: var(--muted); }
 .action-num {
   font-family: var(--mono); font-size: 2.5rem;
-  color: rgba(61,232,196,0.12); font-weight: 700;
+  color: rgba(61,232,196,0.54); font-weight: 700;
   line-height: 1; margin-bottom: 1rem;
 }
 .action-cell h3 {
