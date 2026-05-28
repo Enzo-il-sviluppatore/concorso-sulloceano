@@ -31,7 +31,6 @@ body {
 
 ::selection { background: var(--glow); color: #000; }
 
-/* ── NAV ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
@@ -63,7 +62,6 @@ nav ul a {
 }
 nav ul a:hover { color: var(--glow); }
 
-/* ── HERO ── */
 #hero {
   position: relative;
   min-height: 100vh;
@@ -145,7 +143,6 @@ h1.headline em { color: var(--glow); font-style: italic; }
 }
 @keyframes scrollPulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
 
-/* ── SECTIONS GENERIC ── */
 section { padding: 6rem 4rem; }
 .section-label {
   font-family: var(--mono);
@@ -172,7 +169,6 @@ h2.section-title em { font-style: italic; color: var(--glow); }
   margin-bottom: 4rem; font-weight: 300;
 }
 
-/* ── THREATS GRID ── */
 #threats { background: var(--surface); }
 .threats-grid {
   display: grid;
@@ -230,7 +226,6 @@ h2.section-title em { font-style: italic; color: var(--glow); }
   margin-bottom: 0.25rem;
 }
 
-/* ── IMPACT SPLIT ── */
 #impact { background: var(--deep); }
 .impact-grid {
   display: grid;
@@ -274,7 +269,6 @@ h2.section-title em { font-style: italic; color: var(--glow); }
   line-height: 1.8; font-weight: 300;
 }
 
-/* ── DATA VIZ STRIP ── */
 #data-strip {
   background: var(--ink);
   padding: 5rem 4rem;
@@ -322,7 +316,6 @@ h2.section-title em { font-style: italic; color: var(--glow); }
 .strip-bar-fill.red { background: var(--danger); }
 .strip-bar-fill.warm { background: var(--warm); }
 
-/* ── PULLQUOTE ── */
 .pullquote-section {
   padding: 7rem 4rem;
   background: var(--surface);
@@ -352,7 +345,6 @@ blockquote cite {
   color: var(--glow); font-style: normal;
 }
 
-/* ── TIMELINE ── */
 #timeline { background: var(--deep); }
 .timeline-list { position: relative; padding-left: 2rem; }
 .timeline-list::before {
@@ -385,7 +377,6 @@ blockquote cite {
   max-width: 600px;
 }
 
-/* ── WHAT WE CAN DO ── */
 #action { background: var(--surface); }
 .action-grid {
   display: grid;
@@ -415,7 +406,6 @@ blockquote cite {
   line-height: 1.8; font-weight: 300;
 }
 
-/* ── FOOTER ── */
 footer {
   background: var(--ink);
   padding: 4rem 4rem 3rem;
@@ -451,7 +441,6 @@ footer {
   text-transform: uppercase;
 }
 
-/* ── SCROLL REVEAL ── */
 .reveal {
   opacity: 0; transform: translateY(30px);
   transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
@@ -463,7 +452,6 @@ footer {
 .reveal-delay-4 { transition-delay: 0.4s; }
 .reveal-delay-5 { transition-delay: 0.5s; }
 
-/* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav { padding: 1rem 2rem; }
   nav ul { display: none; }
