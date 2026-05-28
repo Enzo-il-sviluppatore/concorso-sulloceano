@@ -1,4 +1,3 @@
-/* ── HERO CANVAS: deep ocean particle field ── */
 (function () {
   const canvas = document.getElementById('hero-canvas');
   const ctx = canvas.getContext('2d');
@@ -125,7 +124,6 @@
   draw();
 })();
 
-/* ── SCROLL REVEAL ── */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -140,7 +138,6 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal, .strip-bar-fill').forEach(el => observer.observe(el));
 
-/* ── STAGGERED TIMELINE ── */
 const tlObs = new IntersectionObserver((entries) => {
   entries.forEach((e, i) => {
     if (e.isIntersecting) {
@@ -151,7 +148,6 @@ const tlObs = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.timeline-item').forEach(el => tlObs.observe(el));
 
-/* ── IMPACT ITEMS STAGGER ── */
 const impactObs = new IntersectionObserver((entries) => {
   entries.forEach((e, i) => {
     if (e.isIntersecting) {
@@ -162,7 +158,6 @@ const impactObs = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.impact-item').forEach(el => impactObs.observe(el));
 
-/* ── COUNTER ANIMATION ── */
 function animateCount(el, target) {
   const dur = 1800;
   const start = performance.now();
@@ -193,7 +188,6 @@ const counterObs = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('[data-target]').forEach(el => counterObs.observe(el));
 
-/* ── NAV SCROLL SHRINK ── */
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('nav');
   if (window.scrollY > 60) {
